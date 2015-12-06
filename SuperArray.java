@@ -1,8 +1,8 @@
 /*
-Team feckless-octo-turtle - Ruochong Wu, James Hua
-APCS1 pd 10
-HW40 -- Array of Grade 316
-2015-12-02
+Team feckless-octo-turtle - Ruochong Wu, Adam McKoy
+APCS1 pd10
+HW42 -- Array of Titanium
+2015-12-07
 */
 
 public class SuperArray implements ListInt{
@@ -174,9 +174,30 @@ public class SuperArray implements ListInt{
 	test.add(2);
 	test.add(1);
 	System.out.println(test);
- 
-	//*****INSERT ANY ADDITIONAL TEST CALLS HERE*****
 
+	System.out.println("testing get()...");
+	for( int i = 0; i < test.size(); i++ ) {
+	    System.out.print( "item at index" + i + ":\t" );
+	    System.out.println( test.get(i) );
+	}
+
+	test.remove(3);
+	System.out.println("Printing test post-remove...");
+	System.out.println(test);
+	
+	test.add(3,21);
+	System.out.println("Printing test post-insert...");
+	System.out.println(test);
+	test.add(2,42);
+	System.out.println("Printing test post-insert...");
+	System.out.println(test);
+	test.add(1,51);
+	System.out.println("Printing test post-insert...");
+	System.out.println(test);
+
+	System.out.println(test.size());
+ 
+	    
     }//end main
 		
 }//end class
